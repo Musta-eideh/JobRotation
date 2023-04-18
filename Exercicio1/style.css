@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #72eaee53;
+}
+
+.flex{
+    display: flex;
+}
+
+.container{
+    position: absolute;
+    width: 1057px;
+    height: 568px;
+    left: 111px;
+    top: 132px;
+    background: #4c5454bd;
+    border-radius: 10px;
+    align-items: center;
+}
+
+.headline{
+    align-items: center;
+    text-align: center;
+    margin-top: 65px;
+}
