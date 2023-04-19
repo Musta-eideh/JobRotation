@@ -38,3 +38,17 @@ h1{
     font-size: 20px;
     margin-top: 5rem;  
 }
+
+input{
+    width: 250px;
+    height: 1.4rem;
+}
+
+button{
+    width: 5rem;
+    height: 2rem;
+    border-radius: 5px;
+    border-style: none;
+    cursor: pointer;
+    background-color: #72eaee54;
+}
