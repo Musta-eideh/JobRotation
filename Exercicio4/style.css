@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #72eaee53;
+}
+
+.flex{
+    display: flex;
+}
+
+h1{
+    text-decoration: underline;
+}
+
+.container{
+    position: absolute;
+    width: 1057px;
+    height: 568px;
+    left: 111px;
+    top: 132px;
+    background: #4c5454bd;
+    border-radius: 10px;
+    align-items: center;
+}
+
+.headline{
+    align-items: center;
+    text-align: center;
+    margin-top: 5.4rem;
+}
+
+.box{
+    align-items: center;
+    text-align: center;  
+    font-size: 20px;
+    margin-top: 5rem;  
+}
