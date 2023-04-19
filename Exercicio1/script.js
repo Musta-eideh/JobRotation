@@ -5,28 +5,28 @@ IMPORTANTE:
 Esse número pode ser informado através de qualquer entrada de sua preferência ou pode ser previamente definido no código;
  */
 const num = document.querySelector('.numero');
-let a = 0;
-let b = 1;
-let c = 0;
-let t = 35;
 let btn = document.querySelector('.btn');
 const result = document.querySelector('.resultado');
 
 btn.addEventListener("click", function() {
     let inputValue = num.value;
     let certo = false;
+    let a = 0;
+    let b = 1;
+    let t = 100;
 
-    for(let i = 1; i <= c;i++){
-        c = a + b;
+    for(let i = 1; i <= t;i++){
+        let c = a + b;
         a = b;
         b = c;
-        if( a === inputValue) {
+        if( inputValue == c) {
             certo = true;
         }
     }
 
     if (certo){
-        result.innerHTML = `<p>Sim, este número faz parte da sequência de Fibonacci</p>`;
+        console.log('Correto')
+        result.innerHTML = `<p>Sim, este número faz parte da sequência de Fibonacci.</p>`;
     } else {
         result.innerHTML = `<p>Este número não faz parte da sequência de Fibonacci.</p>`;
     }
