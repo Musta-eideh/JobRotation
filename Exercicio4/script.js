@@ -7,10 +7,20 @@
 
 // Escreva um programa na linguagem que desejar onde calcule o percentual de representação que cada estado teve dentro do valor total mensal da distribuidora.
 
-let estados = parseInt([67836.43,36678.66,29229.88,27165.53])
-let soma;
 
-for(var i = 0; i < estados.length; i++){
-    soma += estados;
-    console.log(soma)
-}
+let invoicingStates = [67836.43, 36678.66, 29229.88, 27165.48, 19849.53];
+let sum = invoicingStates.reduce(function(accumulator, value){
+    return accumulator + value
+},0);
+let sP = document.querySelector('.sp')
+let rJ = document.querySelector('.rj')
+let mG = document.querySelector('.mg')
+let eS = document.querySelector('.es')
+let othersStates = document.querySelector('.others')
+
+
+sP.innerHTML += `${((invoicingStates[0]/sum)*100).toFixed(3)} %`
+rJ.innerHTML += `${((invoicingStates[1]/sum)*100).toFixed(3)} %`
+mG.innerHTML += `${((invoicingStates[2]/sum)*100).toFixed(3)} %`
+eS.innerHTML += `${((invoicingStates[3]/sum)*100).toFixed(3)} %`
+othersStates.innerHTML += `${((invoicingStates[4]/sum)*100).toFixed(3)} %`
